@@ -1,3 +1,4 @@
+
 import express from 'express';
 import sequelize from './src/database/config.js';
 import challengesRoutes from './src/routes/challenges.routes.js';
@@ -24,4 +25,8 @@ sequelize.authenticate()
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+});
+
+sequelize.sync({ force: true }).then(() => {
+  console.log('Database & tables created!');
 });
