@@ -5,7 +5,6 @@ import challengesRoutes from './src/routes/challenges.routes.js';
 import realWorldChallengesRoutes from './src/routes/realWorldChallenges.routes.js';
 import commentsRoutes from './src/routes/comment.routes.js';
 
-
 const app = express();
 
 app.use(express.json());

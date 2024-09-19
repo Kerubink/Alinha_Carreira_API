@@ -1,4 +1,3 @@
-// models/challengeModel.js
 import { DataTypes } from 'sequelize';
 import sequelize from '../database/config.js';  
 
@@ -25,6 +24,7 @@ const Challenge = sequelize.define('Challenge', {
     allowNull: false,
   },
 }, {
+  tableName: 'challenges', // Defina o nome da tabela explicitamente em lowercase
   timestamps: true,
 });
 
