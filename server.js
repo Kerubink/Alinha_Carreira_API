@@ -1,9 +1,11 @@
-
 import express from 'express';
+import cors from 'cors';
 import sequelize from './src/database/config.js';
 import challengesRoutes from './src/routes/challenges.routes.js';
 import realWorldChallengesRoutes from './src/routes/realWorldChallenges.routes.js';
 import commentsRoutes from './src/routes/comment.routes.js';
+
+app.use(cors());
 
 const app = express();
 

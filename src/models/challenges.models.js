@@ -24,7 +24,7 @@ const Challenge = sequelize.define('Challenge', {
     allowNull: false,
   },
 }, {
-  tableName: 'challenges', // Defina o nome da tabela explicitamente em lowercase
+  tableName: 'challenges', 
   timestamps: true,
 });
 
