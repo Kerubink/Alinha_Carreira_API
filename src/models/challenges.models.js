@@ -19,6 +19,11 @@ const Challenge = sequelize.define('Challenge', {
     type: DataTypes.ENUM('easy', 'medium', 'hard'),
     allowNull: false,
   },
+  solution: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+    defaultValue: '',
+  },
   points: {
     type: DataTypes.INTEGER,
     allowNull: false,

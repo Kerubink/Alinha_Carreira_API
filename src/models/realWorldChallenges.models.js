@@ -30,6 +30,11 @@ const RealWorldChallenge = sequelize.define('RealWorldChallenge', {
     type: DataTypes.JSON, 
     allowNull: true,
   },
+  solution: {
+    type: DataTypes.TEXT,
+    allowNull: false,
+    defaultValue: '',
+  },
   createdAt: {
     type: DataTypes.DATE,
     defaultValue: DataTypes.NOW,
