@@ -28,6 +28,7 @@ export const createChallenge = async (req, res) => {
       title: req.body.title,
       description: req.body.description,
       difficulty: req.body.difficulty,
+      solution: req.body.solution,
       points: req.body.points,
     });
     res.status(201).json(newChallenge);
@@ -43,6 +44,7 @@ export const updateChallenge = async (req, res) => {
       challenge.title = req.body.title;
       challenge.description = req.body.description;
       challenge.difficulty = req.body.difficulty;
+      challenge.solution = req.body.solution;
       challenge.points = req.body.points;
       await challenge.save();
       res.json(challenge);

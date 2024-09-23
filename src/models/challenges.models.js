@@ -22,7 +22,6 @@ const Challenge = sequelize.define('Challenge', {
   solution: {
     type: DataTypes.TEXT,
     allowNull: false,
-    defaultValue: '',
   },
   points: {
     type: DataTypes.INTEGER,
